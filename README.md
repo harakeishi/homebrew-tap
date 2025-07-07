@@ -1,1 +1,1 @@
-# homebrew-gopose
+# homebrew-tap
