@@ -5,20 +5,20 @@
 class Gopose < Formula
   desc ""
   homepage ""
-  version "0.0.7"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.7/gopose_0.0.7_darwin_amd64.tar.gz"
-      sha256 "a82694100adf294a6fc55984ec7e220a4968a83c2e98c4044ed64c4c779b03b3"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.9/gopose_0.0.9_darwin_amd64.tar.gz"
+      sha256 "b32d8dccae2ea2d1f31827ae7a0f71369574d6f5708a99e7b3aded79dcf59b71"
 
       def install
         bin.install "gopose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.7/gopose_0.0.7_darwin_arm64.tar.gz"
-      sha256 "34b1c2d028461da213a5cf6d197847d2649074f1392a2042b6d962055dd44204"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.9/gopose_0.0.9_darwin_arm64.tar.gz"
+      sha256 "adb6c41a59dafc7b20f3ef148b4be05a9e9a9150ca6b2e8d5b5bc0dcd8c2bac8"
 
       def install
         bin.install "gopose"
@@ -28,15 +28,15 @@ class Gopose < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.7/gopose_0.0.7_linux_amd64.tar.gz"
-      sha256 "4c4c21a83fcadd8e82a06280bb132b31ce6ed198e2e0914931ae6a2666479027"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.9/gopose_0.0.9_linux_amd64.tar.gz"
+      sha256 "0c97da973eebe3204a26616975181f4f72e167421299fa03fdd01b321d40c2d7"
       def install
         bin.install "gopose"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.7/gopose_0.0.7_linux_arm64.tar.gz"
-      sha256 "c7af1573a6c4388a86e574acfe789b40ec57f523ce93179f31da9a88ee5ef561"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.9/gopose_0.0.9_linux_arm64.tar.gz"
+      sha256 "05fefdbc1810aed6c85268db35c47cc73d2a840133f04bc090bd1eec5f6e5b7f"
       def install
         bin.install "gopose"
       end
