@@ -5,20 +5,20 @@
 class Gopose < Formula
   desc ""
   homepage ""
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.11/gopose_0.0.11_darwin_amd64.tar.gz"
-      sha256 "e2ad677fbada073f565a270b3a8678d497418aa7a0b126c40819aba2696cb173"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_darwin_amd64.tar.gz"
+      sha256 "bff3153506c8042f8269fcd74948d7dca2d48a0b6e8058072576b6c802258f79"
 
       def install
         bin.install "gopose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.11/gopose_0.0.11_darwin_arm64.tar.gz"
-      sha256 "38f7e02ea6c391a64c413413620457f43d73e339c625817aa9aa8b9e5264b6b6"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_darwin_arm64.tar.gz"
+      sha256 "ab6b7aad1b6310b074bb85055d72e1addb6d0c7bd9fa9ae8bc1b31e366d5623d"
 
       def install
         bin.install "gopose"
@@ -28,15 +28,15 @@ class Gopose < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.11/gopose_0.0.11_linux_amd64.tar.gz"
-      sha256 "e4e20a9110d31456262e7e31d76bc9849caa121e528f1fd8e9201690d2d19ef8"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_linux_amd64.tar.gz"
+      sha256 "0b5d6f78f6b049a30c9ca218c221608229e7e7c26a68e1010cdc44032a9a640c"
       def install
         bin.install "gopose"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.11/gopose_0.0.11_linux_arm64.tar.gz"
-      sha256 "a5d96d5069a8e63ba59369135e1768212cf7295532fcf2c88618668acf660c13"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_linux_arm64.tar.gz"
+      sha256 "d44cfa91d9a60e0360aa8201e7285d86b5dc9a8b59a393a7d8c7ee4c468faae6"
       def install
         bin.install "gopose"
       end
