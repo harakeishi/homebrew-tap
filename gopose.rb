@@ -5,20 +5,20 @@
 class Gopose < Formula
   desc ""
   homepage ""
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_darwin_amd64.tar.gz"
-      sha256 "bff3153506c8042f8269fcd74948d7dca2d48a0b6e8058072576b6c802258f79"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.13/gopose_0.0.13_darwin_amd64.tar.gz"
+      sha256 "cc9752c11fe542b91e4586f87900baeb637491c69cf0ee3f129891acccfa604c"
 
       def install
         bin.install "gopose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_darwin_arm64.tar.gz"
-      sha256 "ab6b7aad1b6310b074bb85055d72e1addb6d0c7bd9fa9ae8bc1b31e366d5623d"
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.13/gopose_0.0.13_darwin_arm64.tar.gz"
+      sha256 "14129104d60509c93d0691e254b00b192eeab0bada599644a98993ea044b87fa"
 
       def install
         bin.install "gopose"
@@ -27,16 +27,16 @@ class Gopose < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_linux_amd64.tar.gz"
-      sha256 "0b5d6f78f6b049a30c9ca218c221608229e7e7c26a68e1010cdc44032a9a640c"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.13/gopose_0.0.13_linux_amd64.tar.gz"
+      sha256 "2cd0188585ea8fc20519c730f7f052d7579ab15705fe69985fce7681b9df70fd"
       def install
         bin.install "gopose"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/harakeishi/gopose/releases/download/v0.0.12/gopose_0.0.12_linux_arm64.tar.gz"
-      sha256 "d44cfa91d9a60e0360aa8201e7285d86b5dc9a8b59a393a7d8c7ee4c468faae6"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/harakeishi/gopose/releases/download/v0.0.13/gopose_0.0.13_linux_arm64.tar.gz"
+      sha256 "f9ba627508d6cafb57162b890c2b9983c2bdcc91ae902b3aa0160914fe921cc0"
       def install
         bin.install "gopose"
       end
